@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h2 {
+            color: blue;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+        }
+        .desordenada{
+            border: 2px solid darkgreen;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: start;
+
+        }
+        .ordenada{
+            align-items: stretch;
+            border: 2px solid darkgreen;
+            flex-direction: row;   
+        }
+        #myButton{
+            background: darksalmon;
+            
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <!--Encabezado-->
+    <h2>Tareas pendientes</h2>
+    <hr>
+    <!--Menú-->
+    <div class="content">
+            <div class="desordenada">
+                    <ul>
+                        <li>Limpiar arenero</li>
+                        <li>Rentar carro</li>
+                        <li>Pagar renta</li>
+                        <li>Construir empresa</li>
+                        <img src="recursos/totoro_.gif" alt="totoro" tabindex="totoro">
+                    </ul>
+                </div>
+            
+                <div class="ordenada">
+                    <ol>
+                        <li>Visitar familia</li>
+                        <li>Conscientizar problemas</li>
+                        <li>Separar lo que es mío, no de los demás</li>
+                        <img src="recursos/calci.gif" alt="totoro" tabindex="totoro">
+                    </ol>
+                </div>
+    </div>
+ 
+    <hr>
+
+    <button id="myButton">Comprar</button>
+    <input type="checkbox">Hecho
+    <input type="radio">Realizado
+
+
 </body>
+
 </html>
